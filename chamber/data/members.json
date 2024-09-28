@@ -1,0 +1,26 @@
+[
+  {
+    "name": "ABC Company",
+    "address": "123 Main St, City, State, ZIP",
+    "phone": "(123) 456-7890",
+    "website": "https://www.abccorp.com",
+    "image": "abc.jpg",
+    "membershipLevel": 1
+  },
+  {
+    "name": "XYZ Enterprises",
+    "address": "456 Second St, City, State, ZIP",
+    "phone": "(987) 654-3210",
+    "website": "https://www.xyz.com",
+    "image": "xyz.jpg",
+    "membershipLevel": 2
+  },
+  {
+    "name": "LMN Services",
+    "address": "789 Third St, City, State, ZIP",
+    "phone": "(555) 555-5555",
+    "website": "https://www.lmnservices.com",
+    "image": "lmn.jpg",
+    "membershipLevel": 3
+  }
+]

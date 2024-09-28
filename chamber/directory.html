@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Chamber Directory for Business" />
+    <meta name="author" content="Fabrice Ndabitezamaso" />
+    <title>Chamber of Commerce - Directory</title>
+    <meta property="og:title" content="Chamber of Commerce-Directory" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://Fabrice2019.github.io/wdd231/chamber/images/chamberlogo.png"
+    />
+    <meta
+      property="og:url"
+      content="https://Fabrice2019.github.io/wdd231/chamber/directory.html"
+    />
+    <link rel="icon" href="/chamber/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/directory.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./scripts/script.js" defer></script>
+
+  </head>
+  <body>
+    <header>
+      <img src="images/FabriceProfile.png" class="logo" alt="Logo" />
+      <button class="hamburger">&#9776;</button>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="directory.html">Chamber</a></li>
+          <li><a href="https://github.com/Fabrice2019">GitHub Profile</a></li>
+          <li><a href="http://linkedin.com/in/nfabrice">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="view-toggle">
+        <h1>Chamber of Commerce - Directory</h1>
+        <button id="grid-view">⏹️Grid</button>
+        <button id="list-view">📄List</button>
+      </div>
+      <hr />
+      <div id="directory"></div>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="year"></span> Chamber of Commerce. All rights reserved.
+      </p>
+      <p>
+        Developed by Fabrice Ndabitezamaso for WDD 231. Last modified:
+        <span id="last-modified"></span>
+      </p>
+    </footer>
+  </body>
+</html>

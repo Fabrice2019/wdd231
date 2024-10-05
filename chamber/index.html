@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Fabrice Ndabitezamaso" />
-    <meta name="description" content=" Chamber of Commerce" />
+    <meta name="description" content="Fabrice, Chamber of Commerce" />
     <meta property="og:title" content="Chamber of Commerce Home Page" />
     <meta property="og:type" content="website" />
     <meta
@@ -19,17 +20,16 @@
       content="https://Fabrice2019.github.io/wdd231/chamber/images/Seal.svg"
     />
     <title>Chamber of Commerce Home Page</title>
-    <link rel="icon" href="./images/favicon.ico" />
-    <link rel="stylesheet" href="../styles/normalize.css" />
-    <link rel="stylesheet" href="../chamber/styles/index.css" />
-    <link rel="stylesheet" href="../chamber/styles/directory.css" />
-    <link rel="stylesheet" href="/chamber/styles/styles.css" />
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/directory1.css" />
+    <link rel="stylesheet" href="styles/home.css" />
     <script defer src="scripts/home.js"></script>
   </head>
   <body>
     <header>
       <div class="head-info">
-        <img width="100" src="/images/FabriceProfile.png" alt="Route 66" />
+        <img width="100" src="images/FabriceProfile.png" alt="Route 66" />
         <div class="head-logo">
           <h1>Fabrice</h1>
           <p>Chamber of Commerce</p>
@@ -38,7 +38,7 @@
       </div>
       <nav class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="./directory.html">Directory</a></li>
           <li><a href="./join.html">Join</a></li>
           <li><a href="./discover.html">Discover</a></li>
@@ -48,7 +48,7 @@
 
     <main>
       <section class="hero">
-        <img width="1000" src="./images/hero-image.png" alt="Hero Image" />
+        <img width="1000" src="./images/az1.webp" alt="Hero Image" />
         <button onclick="window.location.href='./join.html'" class="cta">
           Join the Chamber
         </button>
@@ -78,16 +78,22 @@
     </main>
 
     <footer>
+      <div class="footer-info">
+        <p><span class="bold">Fabrice Chamber of Commerce</span></p>
+        <p>Ruschenweg 2</p>
+        <p>Leezdorf, 26529</p>
+        <p>fafalove2017@gmail.com</p>
+        <p>01747388664</p>
+      </div>
+      <div class="footer-logos">Twitter</div>
       <div class="project-info">
-        <p>
-          &copy; <span id="currentYear"></span> Chamber of Commerce. All rights
-          reserved.
-        </p>
-        <p>
-          Developed by Fabrice Ndabitezamaso for WDD 231. Last modified:
-          <span id="lastModified"></span>
-        </p>
+        <p>WDD231 Class Project</p>
+        <p>Fabrice Ndabitezamaso</p>
+        <p>©<span id="currentyear"></span> Fabrice Chamber of Commerce</p>
+        <p><span id="lastModified"></span></p>
       </div>
     </footer>
+
+  
   </body>
 </html>

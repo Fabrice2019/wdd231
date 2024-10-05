@@ -124,3 +124,37 @@ document.addEventListener("DOMContentLoaded", function () {
     navbar.classList.toggle("active");
   });
 });
+
+async function loadEvents() {
+  try {
+    const response = await fetch("./data/events.json"); // Path to your events.json
+    const events = await response.json();
+
+    const eventsContainer = document.getElementById("events-container");
+
+    // Generate HTML for each event
+    const eventsHTML = events
+      .map(
+        (event) => `
+        <div class="event-item">
+          <h3>${event.title}</h3>
+          <p><strong>Date:</strong> ${formatDate(event.date)}</p>
+          <p><strong>Location:</strong> ${event.location}</p>
+        </div>
+      `
+      )
+      .join("");
+
+    eventsContainer.innerHTML = eventsHTML;
+  } catch (error) {
+    console.error("Error loading events:", error);
+  }
+}
+
+function formatDate(dateString) {
+  const options = { year: "numeric", month: "long", day: "numeric" };
+  return new Date(dateString).toLocaleDateString("en-US", options);
+}
+
+// Call the function to load events
+loadEvents();

@@ -108,6 +108,31 @@ main {
   object-fit: cover;
 }
 
+.events {
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+.event-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.event-item h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.event-item p {
+  margin: 5px 0;
+}
+
+.event-item:last-child {
+  border-bottom: none;
+}
+
 #membersContainer {
   display: flex;
   flex-wrap: wrap;

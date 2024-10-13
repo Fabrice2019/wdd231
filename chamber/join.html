@@ -91,12 +91,14 @@
             <input type="text" id="business-name" name="businessName" title="Please enter your business/organization name" autocomplete="organization" required>
 
             <label for="membership-level">Select Membership Level:</label>
-            <select id="membership-level" name="membershipLevel" required>
-                <option value="NP">Non-Profit Membership (No Fee)</option>
-                <option value="Bronze">Bronze Membership</option>
-                <option value="Silver">Silver Membership</option>
-                <option value="Gold">Gold Membership</option>
-            </select>
+<select id="membership-level" name="membershipLevel" required>
+    <option value="" disabled selected>Select a membership level</option> <!-- Placeholder option -->
+    <option value="NP">Non-Profit Membership (No Fee)</option>
+    <option value="Bronze">Bronze Membership</option>
+    <option value="Silver">Silver Membership</option>
+    <option value="Gold">Gold Membership</option>
+</select>
+
 
             <label for="business-description">Business/Organization Description:</label>
             <textarea id="business-description" name="businessDescription" title="Describe your business or organization" rows="4" cols="50"></textarea>

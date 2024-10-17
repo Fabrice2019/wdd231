@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Project Site Plan for Blossom Flower Shop, including site purpose, scenarios, color schema, typography, and wireframes."
+    />
+    <title>Blossom Flower Shop - Site Plan</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>Blossom Flower Shop</h1>
+        </div>
+        <div class="hamburger" id="hamburger">
+          &#9776;
+          <!-- Hamburger icon -->
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#purpose">Home</a></li>
+          <li><a href="#products">Shop</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="reason">
+        <h2>Reason for Site Name</h2>
+        <p>
+          Reason for Site Name: The name "Blossom Flower Shop" was chosen to
+          reflect the primary service the website provides — a beautiful and
+          vibrant selection of flowers. The word "Blossom" conveys growth,
+          elegance, and freshness, which are the qualities that the shop wants
+          to highlight through its floral arrangements and online presence. This
+          site will serve as an e-commerce platform to sell floral arrangements
+          and bouquets for various occasions such as weddings, anniversaries,
+          and special events.
+        </p>
+      </section>
+      <section id="purpose">
+        <h2>Site Purpose</h2>
+        <p>
+          Blossom Flower Shop is an e-commerce platform for customers to browse
+          and purchase fresh flower arrangements for events such as weddings,
+          birthdays, and more. It also offers online shopping, seasonal
+          promotions, and delivery services.
+        </p>
+      </section>
+
+      <section id="scenarios">
+        <h2>Visitor Scenarios</h2>
+        <ul>
+          <li>
+            A customer is looking for a wedding bouquet with same-day delivery
+            options.
+          </li>
+          <li>
+            A visitor is searching for Mother's Day offers and discounts for a
+            flower arrangement gift.
+          </li>
+        </ul>
+      </section>
+
+      <section id="color-schema">
+        <h2>Color Schema</h2>
+        <p>
+          Primary Color:
+          <span class="color-box" style="background-color: #e91e63"
+            >#E91E63</span
+          >
+          (Used for buttons and headings to create a vibrant look)
+        </p>
+        <p>
+          Secondary Color:
+          <span class="color-box" style="background-color: #4caf50"
+            >#4CAF50</span
+          >
+          (Used for accents such as footer and product labels)
+        </p>
+      </section>
+
+      <section id="typography">
+        <h2>Typography</h2>
+        <p>
+          <strong>Heading Font:</strong> Playfair Display, serif (used for
+          headings to give a formal and elegant feel)
+        </p>
+        <p>
+          <strong>Body Font:</strong> Lato, sans-serif (used for body text for
+          better readability)
+        </p>
+      </section>
+
+      <section id="wireframe">
+        <h2>Wireframes</h2>
+        <p>Wireframes showcase the layout for both mobile and desktop views.</p>
+
+        <iframe
+          width="700"
+          height="300"
+          src="https://embed.figma.com/design/YnoTvoEkLzpKSxUAF5GTgt/Fabrice-flower-shop?node-id=0-1&embed-host=share"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="700"
+          height="300"
+          src="https://embed.figma.com/design/yxbt7zWZ5eT26nU1HO0Ymg/MOBILE-VIEW?node-id=0-1&embed-host=share"
+          allowfullscreen
+        ></iframe>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 Blossom Flower Shop. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>

@@ -2,6 +2,8 @@ const currentYearSpan = document.getElementById("currentyear");
 const currentYear = new Date().getFullYear();
 const lastModification = document.getElementById("lastModified");
 let oLastModif = new Date(document.lastModified);
+const hamburger = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector("nav ul");
 
 currentYearSpan.textContent = currentYear;
 
@@ -117,7 +119,7 @@ loadSpotlights();
 
 document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.querySelector(".menu-toggle");
-  const navbar = document.querySelector(".navbar");
+  const navbar = document.querySelector("#navbar");
 
   menuToggle.addEventListener("click", function () {
     // Toggle the 'active' class to show or hide the navbar
@@ -155,6 +157,30 @@ function formatDate(dateString) {
   const options = { year: "numeric", month: "long", day: "numeric" };
   return new Date(dateString).toLocaleDateString("en-US", options);
 }
+// Add a click event listener to the hamburger button
+hamburger.addEventListener("click", () => {
+  // Toggle the nav-links between showing and hiding
+  if (navLinks.style.display === "flex") {
+    navLinks.style.display = "none";
+  } else {
+    navLinks.style.display = "flex";
+    navLinks.style.flexDirection = "column"; // Ensure vertical layout for mobile
+    hamburger.style.color = "white";
+    navLinks.style.background = "#003f6b";
+    navLinks.style.marginTop = "0";
+  }
+
+  // Toggle the hamburger icon between '☰' (hamburger) and 'X' (close)
+  hamburger.textContent = hamburger.textContent === "☰" ? "X" : "☰";
+
+  // Optionally add/remove an active class to the hamburger for styling purposes
+  hamburger.classList.toggle("active");
+});
+
+// Toggle menu for hamburger
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
 
 // Call the function to load events
 loadEvents();

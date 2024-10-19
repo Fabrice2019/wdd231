@@ -49,7 +49,7 @@ window.addEventListener("click", (event) => {
 
 // Hamburger menu toggle functionality
 const hamburger = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".navbar");
+const navLinks = document.querySelector("#navbar");
 
 // Toggle the menu visibility
 hamburger.addEventListener("click", () => {
@@ -70,3 +70,13 @@ openJoinModalBtn.addEventListener("click", () => {
 // Close the join modal when its close button is clicked
 const closeJoinModalBtn = joinModal.querySelector(".close"); // Close button for the join modal
 closeJoinModalBtn.addEventListener("click", closeModals);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navbar = document.querySelector("#navbar");
+
+  menuToggle.addEventListener("click", function () {
+    // Toggle the 'active' class to show or hide the navbar
+    navbar.classList.toggle("active");
+  });
+});

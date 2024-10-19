@@ -169,19 +169,48 @@ select {
     color: white;
   }
 
-  .navbar {
+  nav ul {
     display: none;
     flex-direction: column;
-    width: 100%;
-    background-color: #2a405e;
-    top: 80px;
+    position: absolute;
+    margin-top: 30px;
+    top: 0;
     left: 0;
+    width: 100%;
+    background-color: #003f6b;
+    padding: 1rem 0;
   }
 
-  .navbar.active {
+  nav ul.show {
+    position: relative;
+    margin-top: 70px;
+    display: inline-block;
+  }
+  .menu-toggle {
+    display: block;
+    color: #effaff;
+  }
+  #navbar.active ul {
     display: flex;
   }
 
+  #navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #003f6b;
+    top: 135px;
+    left: 0;
+  }
+
+  #navbar.active {
+    display: flex;
+    z-index: 1;
+    background-color: #003f6b;
+  }
+  #navbar .show .active {
+    background-color: #003f6b;
+  }
   .hero-content h1 {
     width: 300px;
     color: black;

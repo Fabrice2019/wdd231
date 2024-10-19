@@ -10,7 +10,7 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:image"
-      content="https://Fabrice2019.github.io/wdd231/chamber/images/chamberlogo.png"
+      content="https://Fabrice2019.github.io/wdd231/chamber/images/FabriceProfile.png"
     />
     <meta
       property="og:url"
@@ -18,6 +18,10 @@
     />
     <link rel="icon" href="/chamber/images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./styles/directory.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/discover.css">
+    <link rel="stylesheet" href="./styles/directory1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,14 +33,21 @@
   </head>
   <body>
     <header>
-      <img src="images/FabriceProfile.png" class="logo" alt="Logo" />
-      <button class="hamburger">&#9776;</button>
-      <nav>
+      <div class="head-info">
+        <img width="100" src="images/FabriceProfile.png" alt="profile picture" />
+        <div class="head-logo">
+          <h1>Fabrice</h1>
+          <p>Chamber of Commerce</p>
+        </div>
+        <div class="menu-toggle">&#9776;</div>
+      </div>
+      
+      <nav id="navbar">
         <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="directory.html">Chamber</a></li>
-          <li><a href="https://github.com/Fabrice2019">GitHub Profile</a></li>
-          <li><a href="http://linkedin.com/in/nfabrice">LinkedIn</a></li>
+          <li><a href="index.html" title="home">home</a></li>
+                    <li><a href="directory.html" title="business">directory</a></li>
+                    <li><a href="join.html" title="join">join</a></li>
+                    <li><a href="discover.html" title="discover">discover</a></li>
         </ul>
       </nav>
     </header>
@@ -51,11 +62,11 @@
     </main>
     <footer>
       <p>
-        &copy; <span id="year"></span> Chamber of Commerce. All rights reserved.
+        &copy; <span id="currentyear"></span> Chamber of Commerce. All rights reserved.
       </p>
       <p>
         Developed by Fabrice Ndabitezamaso for WDD 231. Last modified:
-        <span id="last-modified"></span>
+        <span id="lastModified"></span>
       </p>
     </footer>
   </body>

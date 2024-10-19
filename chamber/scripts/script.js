@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const directory = document.getElementById("directory");
   const gridViewBtn = document.getElementById("grid-view");
   const listViewBtn = document.getElementById("list-view");
-  const yearSpan = document.getElementById("year");
-  const lastModifiedSpan = document.getElementById("last-modified");
-  const hamburger = document.querySelector(".hamburger");
+  const yearSpan = document.getElementById("currentyear");
+  const lastModifiedSpan = document.getElementById("lastModified");
+  const hamburger = document.querySelector(".menu-toggle");
   const navLinks = document.querySelector("nav ul");
   const logo = document.querySelector(".logo");
 
@@ -91,6 +91,9 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       navLinks.style.display = "flex";
       navLinks.style.flexDirection = "column"; // Ensure vertical layout for mobile
+      hamburger.style.color = "white";
+      navLinks.style.background = "#003f6b";
+      navLinks.style.marginTop = "0";
     }
 
     // Toggle the hamburger icon between '☰' (hamburger) and 'X' (close)
@@ -105,15 +108,6 @@ document.addEventListener("DOMContentLoaded", () => {
     navLinks.classList.toggle("show");
   });
 
-  // Toggle menu for hamburger
-  hamburger.addEventListener("click", () => {
-    if (hamburger.textContent === "X") {
-      logo.style.display = "none";
-    } else {
-      logo.style.display = "flex";
-    }
-  });
-
   // Highlight the current page link
   const currentPath = window.location.pathname.split("/").pop();
   const navLinkElements = document.querySelectorAll("nav ul li a");
@@ -123,5 +117,15 @@ document.addEventListener("DOMContentLoaded", () => {
     if (linkPath === currentPath) {
       link.classList.add("current");
     }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navbar = document.querySelector("#navbar");
+
+  menuToggle.addEventListener("click", function () {
+    // Toggle the 'active' class to show or hide the navbar
+    navbar.classList.toggle("active");
   });
 });

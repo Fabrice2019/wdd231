@@ -1,26 +1,6 @@
 [
   {
-    "id": "1",
-    "image": "./images/desk.jpg"
-  },
-  {
-    "id": "2",
-    "image": "./images/businessDeal.jpg"
-  },
-  {
-    "id": "3",
-    "image": "./images/businessPhone.jpg"
-  },
-  {
-    "id": "4",
-    "image": "./images/cities.jpg"
-  },
-  {
     "id": "5",
     "image": "./images/computer.jpg"
-  },
-  {
-    "id": "6",
-    "image": "./images/engine.jpg"
   }
 ]

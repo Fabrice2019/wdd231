@@ -215,14 +215,13 @@ footer div {
   background-color: #154360;
   color: #fff;
   border: none;
-  padding: auto;
   cursor: pointer;
 }
 
 .days div,
 .day-names div {
   text-align: center;
-  padding: auto 5px;
+
   border: 1px solid #ddd;
 }
 
